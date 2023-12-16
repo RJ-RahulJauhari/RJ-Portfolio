@@ -19,7 +19,7 @@ const server = express();
 
 // Middleware 
 server.use(cookieParser());
-server.use(cors({ origin: ['https://rahuljauhari.onrender.com/','https://rj-rahul-jauhari-portfolio.vercel.app/','http://localhost:3000' , 'http://localhost:3001'], credentials: true }))
+server.use(cors({ origin: ['https://rahuljauhari.onrender.com','https://rj-rahul-jauhari-portfolio.vercel.app/','http://localhost:3000' , 'http://localhost:3001'], credentials: true }))
 server.use(express.urlencoded({extended:true})); // Supports URL-Encoded bodies
 server.use(express.json());
 server.use('/auth',AuthRoute);
