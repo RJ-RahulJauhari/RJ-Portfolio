@@ -22,7 +22,7 @@ const LoginPage = () => {
 
   const handleAdminLogin = async () => {
     try {
-      await axios.post(`${BASE_URL}/auth/admin/login`,{email,password},{withCredentials:true})
+      await axios.post(`${BASE_URL}/auth/admin/login`,{email,password})
       .then((res) =>{
         const data = res.data;
         if(data){
