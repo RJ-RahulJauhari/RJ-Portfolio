@@ -19,7 +19,7 @@ const Navbar = () => {
           {
             hero
             ? (hero.social).map((item,index) => {
-              return <SocialIcon key={index} url={item}></SocialIcon>
+              return <SocialIcon target='_blank' key={index} url={item}></SocialIcon>
             })
             : ''
           }
