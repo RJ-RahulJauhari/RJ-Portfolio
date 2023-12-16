@@ -31,7 +31,7 @@ const LoginPage = () => {
           setMessage(`Successful Login by Admin`)
         } 
         }).then(() => {
-          getUser() // we have to call this because we want the home page to initially rerender when new token appears
+           // we have to call this because we want the home page to initially rerender when new token appears
           navigate('/');
         })
     } catch (error) {
