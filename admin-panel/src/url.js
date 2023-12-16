@@ -1,3 +1,3 @@
-export const BASE_URL = 'http://localhost:5000'
+export const BASE_URL = 'https://rj-portfolio-api.onrender.com'
 
-// https://rj-portfolio-api.onrender.com
+// 

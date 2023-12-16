@@ -13,7 +13,7 @@ const UserContextProvider = ({children}) => {
     useEffect(() => {getUser()},[])
     const getUser = async () =>{
         try {
-            const res = await axios.get(BASE_URL+'/auth/refetch',{withCredentials:true})
+            const res = await axios.get(BASE_URL+'/auth/refetch')
             console.log(res.data)
             setUser(res.data);
         } catch (error) {
