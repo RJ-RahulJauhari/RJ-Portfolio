@@ -31,10 +31,9 @@ const LoginPage = () => {
           setMessage(`Successful Login by Admin`)
         } 
         }).then(() => {
-          navigate('/');
-        }).then(() => {
           getUser() // we have to call this because we want the home page to initially rerender when new token appears
-        });
+          navigate('/');
+        })
     } catch (error) {
       setError(true);
       setMessage(error.response ? error.response.data : 'An error occurred')
