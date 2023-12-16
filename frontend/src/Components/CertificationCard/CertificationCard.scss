@@ -1,0 +1,131 @@
+.certification-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    border: solid var(--primary-color) 2px;
+    border-radius: 30px;
+    .certificate-image {
+        height: 250px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            object-fit: fill;
+        }
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        // border-left: solid var(--primary-color);
+        // border-bottom: solid var(--primary-color);
+        // border-right: solid var(--primary-color);
+        // border-bottom-left-radius: 30px;
+        // border-bottom-right-radius: 30px;
+        width: 100%;
+        .upper-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                height: 74px;
+                width: 74px;
+                img {
+                    width: 100%;
+                    background-color: aqua;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: fill;
+                }
+            }
+            .certification-details {
+                text-align: start;
+                padding-left: 10px;
+                .certificate-title {
+                    font-size: var(--large-text-size);
+                    font-weight: 500;
+                }
+                .institute-name {
+                    font-size: var(--small-text-size);
+                    font-weight: 500;
+                    color: var(--secondary-color);
+                }
+                .credID {
+                    font-size: var(--small-text-size);
+                    font-weight: 500;
+                    color: var(--text-color);
+                }
+                .credURL {
+                    font-size: var(--small-text-size);
+                    font-weight: 500;
+                    color: var(--text-color);
+                }
+                .duration {
+                    font-size: var(--small-text-size);
+                    font-weight: 500;
+                    color: var(--sub-text-color);
+                }
+            }
+        }
+        .lower-body {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: flex-start;
+            display: none;
+            /* hide by default */
+            height: 100%;
+            /* set initial height to cover the content */
+            overflow: hidden;
+            /* hide overflow content */
+            transition: height 0.3s;
+            /* add smooth transition animation */
+            .description {
+                height: 50px;
+                text-align: start;
+                overflow: hidden;
+                padding-inline: 10px;
+                font-size: var(--small-text-size);
+                white-space: pre-wrap;
+                &:hover {
+                    height: 100%;
+                }
+            }
+            .skills-head {
+                padding-inline: 10px;
+                font-weight: 500;
+            }
+            .skills-container {
+                width: 100%;
+                display: flex;
+                padding-inline: 10px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+        }
+    }
+    &:hover {
+        .lower-body {
+            display: flex;
+            /* show when parent is hovered */
+        }
+    }
+}

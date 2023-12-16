@@ -1,0 +1,116 @@
+.edit-hero-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    .personal-info-section {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        width: 75%;
+        .personal {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 30px;
+            border-radius: 30px;
+            border: solid var(--component-bg);
+        }
+        .social-media-info-section {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 30px;
+            border: solid var(--component-bg);
+            .social-media-input {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                gap: 10px;
+            }
+            .social-media-display {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    }
+    .upload-resume {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px;
+        width: 75%;
+    }
+    .media-desc-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        width: 75%;
+        .upload-media-section {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 30px;
+            border: solid var(--component-bg);
+            gap: 20px;
+            .upload-controller {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                .controller {
+                    font-size: var(--medium-text-size);
+                    padding: 10px;
+                    border-radius: 30px;
+                    border: solid 2px var(--component-bg);
+                    &:hover {
+                        cursor: pointer;
+                        color: var(--primary-color);
+                    }
+                }
+            }
+            img {
+                height: 300px;
+                width: 80%;
+                align-self: center;
+                object-fit: contain;
+                border: solid 2px var(--component-bg);
+                border-radius: 30px;
+            }
+        }
+        .descriptions {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            gap: 10px;
+            border-radius: 30px;
+            border: solid var(--component-bg);
+        }
+    }
+    .update-control {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-block: 10px;
+        .update-message-field {
+            margin-left: 15%;
+            font-size: var(--medium-text-size);
+        }
+        .update-button {
+            margin-right: 15%;
+            padding-inline: 100px;
+            padding-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.admin-navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 2px var(--primary-color);
+    .top-nav-admin {
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        .admin-logo {
+            font-size: var(--large-text-size);
+            .hero-name {
+                color: var(--primary-color);
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .admin-nav-links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 25px;
+            padding-inline: 30px;
+            justify-content: center;
+            .admin-link {
+                color: var(--text-color);
+                font-size: var(--medium-text-size);
+                &:hover {
+                    color: var(--primary-color);
+                    transition: 0.2s;
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+                &:active {
+                    transition: 0.1s;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    .bottom-nav-admin {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5px;
+        .tab {
+            font-size: var(--medium-text-size);
+            padding: 10px;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.user-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: solid 2px var(--primary-color);
+    .logo {
+        padding-left: 50px;
+        color: var(--primary-color);
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+        .search-bar {
+            width: 60%;
+            background-color: transparent;
+            color: var(--text-color);
+        }
+    }
+    .user-nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        .user-links {
+            color: var(--text-color);
+            font-size: var(--medium-text-size);
+            &:hover {
+                color: var(--primary-color);
+                transition: 0.2s;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            &:active {
+                transition: 0.1s;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.experience-card {
+    width: 90%;
+    border: 3px var(--component-bg) solid;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    .experience-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
+        .experience-left-top {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+            .logo {
+                img {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                }
+            }
+            .info {
+                text-overflow: ellipsis;
+                overflow: visible;
+                overflow-wrap: break-word;
+                .title {
+                    font-size: var(--large-text-size);
+                    font-weight: 600;
+                }
+                .company-name {
+                    font-size: var(--medium-text-size);
+                    font-weight: 600;
+                }
+                .sub-info {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .experience-type {
+                        color: var(--grey-text-color);
+                        font-size: var(--small-text-size);
+                        font-weight: 600;
+                    }
+                    .duration {
+                        color: var(--text-color);
+                        font-size: var(--small-text-size);
+                        font-weight: 600;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .experience-left-bottom {
+            .skills-heading {
+                font-size: var(--large-text-size);
+            }
+            .skills-container {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                flex-wrap: wrap;
+                padding-block: 10px;
+            }
+        }
+    }
+    .experience-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        .description {
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .experience-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}

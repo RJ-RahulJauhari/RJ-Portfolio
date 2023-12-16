@@ -1,0 +1,65 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    .logo {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border: solid var(--component-bg) 3px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: solid var(--component-bg) 3px;
+        border-top: none;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-bottom: 20px;
+        .heading {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-info {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            .category {
+                font-size: var(--medium-text-size);
+                font-weight: 600;
+            }
+            .description {
+                height: auto;
+                min-height: 70px;
+                max-height: 100px;
+                text-overflow: ellipsis;
+                overflow-wrap: break-word;
+                overflow: hidden;
+            }
+        }
+        .project-skills {
+            width: 90%;
+            .skills-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

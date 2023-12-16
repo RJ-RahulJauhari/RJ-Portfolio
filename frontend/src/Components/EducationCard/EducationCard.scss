@@ -1,0 +1,56 @@
+.education-card {
+    border: solid var(--primary-color) 2px;
+    width: 85%;
+    .institute-name {
+        font-size: var(--medium-text-size);
+        text-align: center;
+    }
+    .institute-tag {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .class {
+        font-size: var(--small-text-size);
+        font-weight: 500;
+        color: var(--sub-text-color);
+    }
+    .board {
+        font-size: var(--small-text-size);
+        font-weight: 500;
+        color: var(--sub-text-color);
+    }
+    .duration {
+        font-size: var(--small-text-size);
+        font-weight: 500;
+        color: var(--sub-text-color);
+    }
+    .score-info {
+        font-size: var(--small-text-size);
+        font-weight: 700;
+    }
+    .description {
+        font-size: var(--small-text-size);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 50px;
+        white-space: pre-wrap;
+        &:hover {
+            transition: 0.3s;
+            height: 100%;
+        }
+    }
+}
+
+.others-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: greenyellow;
+}
+
+.primary-border {
+    border-color: var(--secondary-color);
+}

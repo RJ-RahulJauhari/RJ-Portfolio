@@ -1,0 +1,122 @@
+.edit-project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    .title {
+        padding-left: 3%;
+    }
+    .project-details {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 50px;
+        .project-info {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .duration {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+    .media-upload {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+        .logo-video-upload {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 30px;
+            .upload-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                gap: 15px;
+                border: solid 3px var(--component-bg);
+                border-radius: 20px;
+                img {
+                    width: 300px;
+                    height: 200px;
+                    border: solid 3px var(--component-bg);
+                    border-radius: 20px;
+                    object-fit: contain;
+                }
+            }
+        }
+        .image-upload {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            .image-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    }
+    .project-bottom {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        .project-skills {
+            display: flex;
+            width: 35%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 30px;
+            justify-content: center;
+            .skills-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        .description {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    .bottom-buttons {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .submit-btn {
+            width: 20%;
+        }
+    }
+}

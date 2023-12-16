@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .top-navbar {
+        width: 97%;
+    }
+    .line {
+        height: 3px;
+    }
+}

@@ -1,0 +1,16 @@
+.tag {
+    padding-inline: 10px;
+    font-size: var(--small-text-size);
+    font-weight: 500;
+    border: solid var(--secondary-color);
+    color: var(--secondary-color);
+    width: fit-content;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}

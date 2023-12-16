@@ -1,0 +1,20 @@
+.skills-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-inline: 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    border: solid var(--primary-color) 2px;
+    width: fit-content;
+    &:hover {
+        transition: 0.15s;
+        transform: scale(1.05);
+        background-color: var(--primary-color);
+    }
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}

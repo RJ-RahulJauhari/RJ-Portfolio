@@ -1,0 +1,109 @@
+.add-experience-page {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 100px;
+    .title {
+        align-self: flex-start;
+        margin-left: 3%;
+        font-size: var(--title-text-size);
+    }
+    .experience-info {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+        gap: 50px;
+        .experience-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .duration {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-self: center;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 5px;
+        }
+    }
+    .experience-upload {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 30px;
+        .upload-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 15px;
+            border: solid 3px var(--component-bg);
+            border-radius: 20px;
+            img {
+                width: 300px;
+                height: 200px;
+                border: solid 3px var(--component-bg);
+                border-radius: 20px;
+                object-fit: contain;
+            }
+        }
+    }
+    .skills-description-section {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        .experience-skills {
+            display: flex;
+            width: 35%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 30px;
+            justify-content: center;
+            .skills-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        .description {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    .bottom-buttons {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .message {
+            font-size: var(--medium-text-size);
+            font-weight: 700;
+        }
+        .submit-btn {
+            width: 20%;
+        }
+    }
+}

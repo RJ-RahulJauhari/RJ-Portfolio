@@ -1,0 +1,412 @@
+:root {
+    /* Colors */
+    --primary-color: #007BF9;
+    --secondary-color: #FDDB26;
+    --component-border: rgb(91, 91, 91);
+    --sucess-color: #03C988;
+    --failure-color: red;
+    --text-color: white;
+    --sub-text-color: #A9A9A9;
+    /* Text Size */
+    --xsmall-text-size: 10px;
+    --small-text-size: 16px;
+    --normal-text-size: 20px;
+    --medium-text-size: 26px;
+    --large-text-size: 32px;
+    --heading-text-size: 48px;
+    --title-text-size: 64px;
+}
+
+body {
+    margin: 0;
+    background-color: #02021E;
+    color: var(--text-color);
+    font-size: var(--normal-text-size);
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.help {
+    border: solid red 2px;
+}
+
+
+/* Some helper functions */
+
+.pri-border {
+    border-color: var(--primary-color);
+}
+
+.sec-border {
+    border-color: var(--secondary-color);
+}
+
+.success-border {
+    border-color: var(--sucess-color);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.page-height {
+    height: 100vh;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.flex5 {
+    flex: 5;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gap1 {
+    gap: 10px;
+}
+
+.gap2 {
+    gap: 20px;
+}
+
+.gap3 {
+    gap: 30px;
+}
+
+.pad1 {
+    padding: 10px;
+}
+
+.pad2 {
+    padding: 20px;
+}
+
+.pad3 {
+    padding: 30px;
+}
+
+.pad4 {
+    padding: 40px;
+}
+
+.row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-space-around {
+    display: block;
+    flex-direction: col;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.center-row {
+    justify-content: center;
+}
+
+.center-col {
+    align-items: center;
+}
+
+.spacer {
+    height: 100px;
+}
+
+
+/* Some UI Effects */
+
+.elevated-card {
+    &:hover {
+        transition: 0.2s;
+        transform: scale(1.05);
+        box-shadow: var(--primary-color) 0px 10px 20px, var(--secondary-color) 0px 6px 6px;
+    }
+}
+
+.expandable {
+    &:hover {
+        height: 100%;
+    }
+}
+
+.tab {
+    font-weight: 500;
+    padding: 5px;
+}
+
+.card-border {
+    border: 3px solid var(--component-border);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.search-bar {
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: var(--normal-text-size);
+    background-color: transparent;
+    border: solid var(--primary-color) 2px;
+    width: 75%;
+    color: var(--text-color);
+}
+
+.field {
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: var(--normal-text-size);
+    background-color: transparent;
+    border: solid var(--primary-color) 2px;
+    width: 75%;
+    color: var(--text-color);
+}
+
+.text-field {
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: var(--normal-text-size);
+    background-color: transparent;
+    border: solid var(--primary-color) 2px;
+    width: 75%;
+    color: var(--text-color);
+}
+
+.primary-button {
+    padding: 15px;
+    padding-inline: 55px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    border: none;
+    font-size: var(--normal-text-size);
+    font-weight: 700;
+    text-align: center;
+    &:hover {
+        opacity: 0.85;
+        transition: 0.1s;
+        transform: scale(1.05);
+    }
+    &:active {
+        transition: 0.1s;
+        transform: scale(1);
+    }
+}
+
+.remove-link-decor {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.clickable {
+    &:active {
+        transform: scale(0.95);
+        transition: 0.15s;
+    }
+}
+
+.hoverable {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 0.1s;
+    }
+}
+
+.scale-up {
+    transition: 0.2s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.2s ease;
+    }
+}
+
+
+/* Text Format */
+
+.title {
+    font-size: var(--title-text-size);
+    font-weight: 700;
+}
+
+.heading {
+    font-size: var(--heading-text-size);
+    font-weight: 700;
+}
+
+.sub-heading {
+    font-size: var(--large-text-size);
+    font-weight: 600;
+}
+
+.caption {
+    color: var(--secondary-color);
+    font-size: var(--medium-text-size);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.medium-text {
+    font-size: var(--medium-text-size);
+    font-weight: 500;
+}
+
+.wrapable-text {
+    word-wrap: break-word;
+    word-break: normal;
+    text-wrap: wrap;
+    overflow: hidden;
+}
+
+
+/* Image Format */
+
+.full-cover-img {
+    object-fit: cover;
+}
+
+
+/* Animation */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.animated-bg {
+    background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Cursor blinking animation */
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* Hide the cursor when animation is complete */
+
+.typewriter-text.complete {
+    border-right: none;
+}
+
+
+/* Apply styles to the text and cursor */
+
+.typewriter-text {
+    overflow: hidden;
+    border-right: 0.15em solid var(--primary-color);
+    /* Cursor styling */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 1s steps(40, end), blink 0.50s step-end infinite;
+}

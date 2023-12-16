@@ -1,0 +1,18 @@
+.project-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    .cust {
+        width: 100%;
+    }
+}

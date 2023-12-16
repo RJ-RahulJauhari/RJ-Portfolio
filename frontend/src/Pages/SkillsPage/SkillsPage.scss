@@ -1,0 +1,21 @@
+.skills-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    .caption {
+        text-align: center;
+    }
+    .skill-cards-container {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}

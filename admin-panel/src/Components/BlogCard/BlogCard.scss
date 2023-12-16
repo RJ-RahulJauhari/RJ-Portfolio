@@ -1,0 +1,87 @@
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    .logo {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border: solid var(--component-bg) 3px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: solid var(--component-bg) 3px;
+        border-top: none;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-bottom: 20px;
+        .heading {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .blog-info {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            .author {
+                font-size: var(--small-text-size);
+                font-weight: 700;
+            }
+            .category {
+                font-size: var(--medium-text-size);
+                font-weight: 600;
+            }
+            .description {
+                height: auto;
+                min-height: 70px;
+                max-height: 100px;
+                text-overflow: ellipsis;
+                overflow-wrap: break-word;
+                overflow: hidden;
+            }
+        }
+        .blog-categories {
+            width: 90%;
+            .categories-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+        }
+        .blog-card-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            width: 90%;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+    }
+}
+
+.approved {
+    background-color: rgb(157, 226, 54);
+}
+
+.decline {
+    background-color: red;
+}

@@ -1,0 +1,20 @@
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-height: 250px;
+    align-items: center;
+    border-color: var(--primary-color);
+    text-align: center;
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
+}

@@ -1,0 +1,45 @@
+.skills-page {
+    padding-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 100px;
+    .title {
+        font-size: var(--title-text-size);
+    }
+    .add-skills-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-inline: 100px;
+    }
+    .main-categories {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: flex-start;
+    }
+}
+
+.skills {
+    padding: 20px;
+    border: solid var(--component-bg) 3px;
+    border-radius: 30px;
+    width: auto;
+    min-width: 200px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
