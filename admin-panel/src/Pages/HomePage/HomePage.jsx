@@ -7,13 +7,7 @@ import Cookies from 'js-cookie';
 const HomePage = () => {
   const {user,setUser} = useContext(UserContext);
   const navigate = useNavigate();
-
-
-  useEffect(() => {
-    console.log(process.env.REACT_APP_apiKey);
-  },[])
   
-
   return (
     <div>
 

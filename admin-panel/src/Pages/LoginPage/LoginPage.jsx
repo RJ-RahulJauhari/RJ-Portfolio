@@ -4,7 +4,6 @@ import axios from 'axios';
 import { BASE_URL } from '../../url';
 import { UserContext } from '../../Context/UserContext';
 import { useNavigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 
 const LoginPage = () => {
   const [email,setEmail] = useState('');
@@ -32,8 +31,9 @@ const LoginPage = () => {
           setMessage(`Successful Login by Admin`)
         } 
         }).then(() => {
-          getUser() // we have to call this because we want the home page to initially rerender when new token appears
           navigate('/');
+        }).then(() => {
+          getUser() // we have to call this because we want the home page to initially rerender when new token appears
         });
     } catch (error) {
       setError(true);
@@ -42,9 +42,9 @@ const LoginPage = () => {
     }
   }
 
-  const handleUserLogin = () => {
-    navigate('/userLogin')
-  }
+  // const handleUserLogin = () => {
+  //   navigate('/userLogin')
+  // }
 
   return (
     <div className='login-page'>
