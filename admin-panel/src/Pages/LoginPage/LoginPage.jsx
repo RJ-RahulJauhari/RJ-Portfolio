@@ -22,7 +22,7 @@ const LoginPage = () => {
 
   const handleAdminLogin = async () => {
     try {
-      await axios.post(`${BASE_URL}/auth/admin/login`,{email,password})
+      await axios.post(`${BASE_URL}/auth/admin/login`,{email,password},{withCredentials:true})
       .then((res) =>{
         const data = res.data;
         if(data){
@@ -31,7 +31,7 @@ const LoginPage = () => {
           setMessage(`Successful Login by Admin`)
         } 
         }).then(() => {
-           // we have to call this because we want the home page to initially rerender when new token appears
+          getUser();// we have to call this because we want the home page to initially rerender when new token appears
           navigate('/');
         })
     } catch (error) {
