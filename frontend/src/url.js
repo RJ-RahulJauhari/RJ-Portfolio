@@ -1,3 +1,3 @@
-export const BASE_URL = 'https://rj-rahul-jauhari-portfolio-api.vercel.app'
+export const BASE_URL = 'https://rj-portfolio-api.onrender.com'
 
 // http://localhost:5000
