@@ -3,18 +3,10 @@ import './AboutPage.scss'
 import { HeroContext } from '../../Context/HeroContext'
 import EducationCard from '../../Components/EducationCard/EducationCard';
 import {useLocation} from 'react-router-dom'
-import axios from "axios";
-import { BASE_URL } from "../../url";
 
 const AboutPage = () => {
   const {hero,education} = useContext(HeroContext);
   const page = useLocation().pathname.substring(1);
-
-  useEffect(() => {
-    getHero();
-    getEducation();
-  },[])
-
 
   if(hero && education){
     return (
