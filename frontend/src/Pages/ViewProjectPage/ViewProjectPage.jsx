@@ -93,7 +93,7 @@ const ViewProjectPage = () => {
         <div className='video-player'>
         {
           data.videoUrl
-          ? <ReactPlayer url={data.videoUrl} controls={true} width={'820'}></ReactPlayer>
+          ? <ReactPlayer url={data.videoUrl} controls={true} width={'720'}></ReactPlayer>
           : ''
         }
         </div>
