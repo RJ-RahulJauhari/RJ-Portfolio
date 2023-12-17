@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './AboutPage.scss'
 import { HeroContext } from '../../Context/HeroContext'
 import EducationCard from '../../Components/EducationCard/EducationCard';
