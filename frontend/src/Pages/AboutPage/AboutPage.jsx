@@ -7,9 +7,7 @@ import axios from "axios";
 import { BASE_URL } from "../../url";
 
 const AboutPage = () => {
-  //const {hero,education} = useContext(HeroContext);
-  const [hero,setHero] = useState(null);
-  const [education,setEducation] = useState(null); 
+  const {hero,education} = useContext(HeroContext);
   const page = useLocation().pathname.substring(1);
 
   useEffect(() => {
@@ -17,31 +15,6 @@ const AboutPage = () => {
     getEducation();
   },[])
 
-  const getHero = async () =>{
-    try {
-        await axios.get(`${BASE_URL}/users/hero`)
-        .then((res) =>{
-            setHero(res.data);
-        })
-    } catch (error) {
-        setHero(null);
-        console.log(error.response.data);
-    }
-  }
-
-  const getEducation = async () => {
-    try {
-        await axios.get(`${BASE_URL}/education/getAll`)
-        .then((res) => {
-            const data = res.data;
-            if(data){
-                setEducation(data)
-            }
-        })
-    } catch (error) {
-        console.log(error.response.data)
-    }
-}
 
   if(hero && education){
     return (
