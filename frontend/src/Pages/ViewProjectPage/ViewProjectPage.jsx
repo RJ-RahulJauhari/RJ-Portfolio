@@ -39,7 +39,7 @@ const ViewProjectPage = () => {
         {
           data.imagesUrl && data.imagesUrl.length > 0 
           ? <div className='flex2'>
-              <ImageCarousel width={'400px'} images={data.imagesUrl} stopOnHover={true} swipeble={true} infiniteLoop={true} autoplay={true} interval={4000}></ImageCarousel>
+              <ImageCarousel width={'520px'} images={data.imagesUrl} stopOnHover={true} swipeble={true} infiniteLoop={true} autoplay={true} interval={4000}></ImageCarousel>
             </div>
           : ""
         }
