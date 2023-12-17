@@ -18,6 +18,7 @@
         .about-left {
             display: flex;
             flex-direction: column;
+            min-width: 300px;
             .description {
                 text-align: justify;
                 white-space: pre-wrap;

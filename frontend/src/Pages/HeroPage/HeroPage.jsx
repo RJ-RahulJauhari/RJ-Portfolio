@@ -13,7 +13,7 @@ const HeroPage = () => {
     const navigate = useNavigate();
 
   return (
-    <div style={hero?{background:`${hero.coverUrl}`}:{}} className='hero-section gap1 row-center full-width full-height wrap flex-row'>
+    <div style={hero?{background:`${hero.coverUrl}`}:{}} className='hero-section gap1 row-center full-width help wrap flex-row'>
       <div className='hero-left full-height flex1 gap3 wrap'>
             <div className='welcome-lines wrap'>
                 <p className='left'><span className='hero-line1'>Hi, I am</span></p>

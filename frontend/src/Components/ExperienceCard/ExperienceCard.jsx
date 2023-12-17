@@ -17,7 +17,7 @@ const ExperienceCard = ({props}) => {
                 <div className='company-logo'>
                     <img src={props.companyLogo} alt="Company Logo" />
                 </div>
-                <div className='experience-details  flex4'>
+                <div className='experience-details flex4'>
                     <p className='exp-title'>{props.title}</p>
                     <p className='comp-name'>{props.companyName}</p>
                     <p className='duration'>{new Date(props.startDate).toDateString()} - {new Date(props.endDate).toDateString()}</p>

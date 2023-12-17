@@ -10,14 +10,14 @@ const AboutPage = () => {
 
   if(hero && education){
     return (
-      <div className='about-page full-width'>
+      <div className='about-page full-width help'>
         
         {
         page === 'about'
         ?<div className='spacer'></div>
         :  <p className='title scale-up'>My Journey <br /><span className='caption'>Get to know where it all started</span></p>
         }
-        <div className='about-container gap3'>
+        <div className='about-container help gap3'>
           <div className='about-left flex1'>
             <h1 className='heading'>About Me</h1>
             <p className='description wrapable-text'>{hero.description}</p>
