@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 
 const HomePage = () => {
-  const {user,setUser} = useContext(UserContext);
+  const {user,setUser,getUser} = useContext(UserContext);
   const navigate = useNavigate();
   
   return (

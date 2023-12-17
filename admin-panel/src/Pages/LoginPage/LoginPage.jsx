@@ -22,7 +22,7 @@ const LoginPage = () => {
 
   const handleAdminLogin = async () => {
     try {
-      await axios.post(`${BASE_URL}/auth/admin/login`,{email,password},{withCredentials:true})
+      await axios.post(`${BASE_URL}/auth/admin/login`,{email:email,password:password},{withCredentials:true})
       .then((res) =>{
         const data = res.data;
         if(data){
@@ -31,6 +31,8 @@ const LoginPage = () => {
           setMessage(`Successful Login by Admin`)
           navigate('/');
         } 
+        }).then(() => {
+          getUser();
         })
     } catch (error) {
       setError(true);
