@@ -73,14 +73,14 @@ const AddExperience = () => {
   }
 
   const uploadOfferLetter = () => {
-    if(newCompanyLogo){
+    if(newOfferLetter){
       const offerLetterDestination = `experience/${user._id}/${id}/offerLetter/${new Date().getTime().toString()+newOfferLetter.name}`;
       UploadFile(newOfferLetter,offerLetterDestination,setLetterUploadPerc,setOfferLetterUrl,setOfferLetterUrl);
     }
   }
 
   const uploadCertificate = () => {
-    if(newCompanyLogo){
+    if(newCertificate){
       const certificateDestination = `experience/${user._id}/${id}/certificate/${new Date().getTime().toString()+newCertificate.name}`;
       UploadFile(newCertificate,certificateDestination,setCertificateUploadPerc,setCertificateUrl,setCertificateUrl);
     }
