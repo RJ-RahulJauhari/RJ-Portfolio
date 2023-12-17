@@ -4,15 +4,17 @@ import Tag from '../Tag/Tag.jsx'
 import SkillsTag from '../SkillsTag/SkillsTag'
 import { SocialIcon } from 'react-social-icons'
 import Icon from '../Icon/Icon.jsx'
+import {useLocation,useNavigate} from 'react-router-dom'
 
 const ProjectCard = ({props}) => {
+  const navigate = useNavigate();
   return (
     <div className='project-card scale-up elevated-card'>
       <div className='logo'>
         <img src={props.logoUrl} alt="project-logo" />
       </div>
       <p className='project-title'>{props.title}</p>
-      <div className='card-body '>
+      <div onClick={() => {navigate(`/projects/${props._id}`)}} className='card-body '>
         <div className="project-details ">
             <Tag tag={props.category}></Tag>
             <p className='duration'>{new Date(props.startDate).toLocaleDateString()} - {new Date(props.endDate).toLocaleDateString()}</p>

@@ -5,7 +5,7 @@ import ProjectCard from '../../Components/ProjectCard/ProjectCard'
 import { HeroContext } from '../../Context/HeroContext'
 import axios from 'axios';
 import { BASE_URL } from '../../url'
-import {useLocation} from 'react-router-dom'
+import {useLocation,useNavigate} from 'react-router-dom'
 
 const ProjectPage = () => {
 

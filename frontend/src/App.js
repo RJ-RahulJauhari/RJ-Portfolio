@@ -9,6 +9,7 @@ import CertificationPage from './Pages/CertificationsPage/CertificationPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import Navbar from './Components/Navbar/Navbar';
 import { HeroContextProvider } from './Context/HeroContext';
+import ViewProjectPage from './Pages/ViewProjectPage/ViewProjectPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/skills' element={<SkillsPage></SkillsPage>}></Route>
         <Route path='/experiences' element={<ExperiencePage></ExperiencePage>}></Route>
         <Route path='/projects' element={<ProjectPage></ProjectPage>}></Route>
+        <Route path='/projects/:id' element={<ViewProjectPage></ViewProjectPage>}></Route>
         <Route path='/certifications' element={<CertificationPage></CertificationPage>}></Route>
         <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
       </Routes>
