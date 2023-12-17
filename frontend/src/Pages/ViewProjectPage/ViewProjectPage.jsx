@@ -39,13 +39,13 @@ const ViewProjectPage = () => {
         {
           data.imagesUrl && data.imagesUrl.length > 0 
           ? <div className='flex2'>
-              <ImageCarousel images={data.imagesUrl} stopOnHover={true} swipeble={true} infiniteLoop={true} autoplay={true} interval={4000} width={300}></ImageCarousel>
+              <ImageCarousel width={'400px'} images={data.imagesUrl} stopOnHover={true} swipeble={true} infiniteLoop={true} autoplay={true} interval={4000}></ImageCarousel>
             </div>
           : ""
         }
         <div className='project-info flex3'>
           <div className='flex-row center full-width'>
-            <div className='logo'>
+            <div className='logo flex1'>
               <img src={data.logoUrl} alt="" />
             </div>
             <div className='flex4 center-content'>
@@ -68,7 +68,7 @@ const ViewProjectPage = () => {
             </div>
             :'' 
           }
-          <div className='summary'>
+          <div className='summary full-width'>
             <p className='sub-heading'>Summary</p>
             {
               data.shortDescription
@@ -99,7 +99,7 @@ const ViewProjectPage = () => {
         </div>
         <div>
           <p className='sub-heading'>Description</p>
-          <p>{data.description}</p>
+          <p className='description'>{data.description}</p>
         </div>
       </div>
       <div className='spacer'></div>

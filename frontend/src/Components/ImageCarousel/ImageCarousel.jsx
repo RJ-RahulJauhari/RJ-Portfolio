@@ -11,7 +11,7 @@ const ImageCarousel = ({images,width,swipeble,axis, autoplay,transitionTime, int
             images
             ? images.map((image,index) => {
                 return <div className='images' key={index}>
-                    <img src={image} />
+                    <img src={image} onClick={() => {}} />
                     {/* {
                         image.caption
                         ?<p className="legend">Legend 1</p>

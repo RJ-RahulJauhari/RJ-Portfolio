@@ -9,12 +9,12 @@ import {useLocation,useNavigate} from 'react-router-dom'
 const ProjectCard = ({props}) => {
   const navigate = useNavigate();
   return (
-    <div className='project-card scale-up elevated-card'>
+    <div className='project-card scale-up elevated-card' onClick={() => {navigate(`/projects/${props._id}`)}}>
       <div className='logo'>
         <img src={props.logoUrl} alt="project-logo" />
       </div>
       <p className='project-title'>{props.title}</p>
-      <div onClick={() => {navigate(`/projects/${props._id}`)}} className='card-body '>
+      <div className='card-body '>
         <div className="project-details ">
             <Tag tag={props.category}></Tag>
             <p className='duration'>{new Date(props.startDate).toDateString()} - {new Date(props.endDate).toDateString()}</p>
