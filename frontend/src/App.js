@@ -16,12 +16,12 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route exact path='/' element={<HomePage></HomePage>}></Route>
-        <Route exact path='/about' element={<AboutPage></AboutPage>}></Route>
-        <Route exact path='/skills' element={<SkillsPage></SkillsPage>}></Route>
-        <Route exact path='/experiences' element={<ExperiencePage></ExperiencePage>}></Route>
-        <Route exact path='/projects' element={<ProjectPage></ProjectPage>}></Route>
-        <Route exact path='/certifications' element={<CertificationPage></CertificationPage>}></Route>
-        <Route exact path='/contact' element={<ContactPage></ContactPage>}></Route>
+        <Route path='/about' element={<AboutPage></AboutPage>}></Route>
+        <Route path='/skills' element={<SkillsPage></SkillsPage>}></Route>
+        <Route path='/experiences' element={<ExperiencePage></ExperiencePage>}></Route>
+        <Route path='/projects' element={<ProjectPage></ProjectPage>}></Route>
+        <Route path='/certifications' element={<CertificationPage></CertificationPage>}></Route>
+        <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
       </Routes>
     </HeroContextProvider>
   );
