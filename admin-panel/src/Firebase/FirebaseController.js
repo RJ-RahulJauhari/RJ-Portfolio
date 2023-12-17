@@ -4,6 +4,11 @@ import app from "../firebase-config";
 
 const UploadFile = (file,path,setMeter,setValue,setImage) => {
     const storage = getStorage(app);
+    if(storage){
+        console.log("Connected to Firebase...")
+    }else{
+        console.log("Can not connect to Firebase")
+    }
 
     const storageRef = ref(storage, path + new Date().getTime().toString() +file.name);
     const uploadTask = uploadBytesResumable(storageRef, file);

@@ -12,16 +12,15 @@ import ContactPage from '../ContactPage/ContactPage'
 const HomePage = () => {
 
   const page = useLocation().pathname.substring(1);
-
   return (
     <div>
-      <HeroPage></HeroPage>
-      <AboutPage></AboutPage>
-      <SkillsPage></SkillsPage>
-      <ExperiencePage></ExperiencePage>
-      <ProjectPage></ProjectPage>
-      <CertificationPage></CertificationPage>
-      <ContactPage></ContactPage>
+      <HeroPage id='hero'></HeroPage>
+      <AboutPage id='about'></AboutPage>
+      <SkillsPage id='skills'></SkillsPage>
+      <ExperiencePage id='experiences'></ExperiencePage>
+      <ProjectPage id='projects'></ProjectPage>
+      <CertificationPage id='certifications'></CertificationPage>
+      <ContactPage id='contact'></ContactPage>
     </div>
   )
 }

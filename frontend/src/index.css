@@ -17,6 +17,10 @@
     --title-text-size: 64px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #02021E;
