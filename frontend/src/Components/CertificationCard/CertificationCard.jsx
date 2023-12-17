@@ -20,7 +20,7 @@ const CertificationCard = ({props}) => {
             <p className='institute-name'>{props.institution}</p>
             <p className='credID'>Credential: {props.credId}</p>
             <a target='_blank' className='remove-link-decor hoverable' href={props.credUrl}><p className='credURL'>Credential Link</p></a>
-            <p className='duration'>{new Date(props.startDate).toLocaleDateString()} - {new Date(props.endDate).toLocaleDateString()}</p>
+            <p className='duration'>{new Date(props.startDate).toDateString()} - {new Date(props.endDate).toDateString()}</p>
           </div>
         </div>
         <div className='lower-body'>

@@ -20,7 +20,7 @@ const ExperienceCard = ({props}) => {
                 <div className='experience-details  flex4'>
                     <p className='exp-title'>{props.title}</p>
                     <p className='comp-name'>{props.companyName}</p>
-                    <p className='duration'>{new Date(props.startDate).toLocaleDateString()} - {new Date(props.endDate).toLocaleDateString()}</p>
+                    <p className='duration'>{new Date(props.startDate).toDateString()} - {new Date(props.endDate).toDateString()}</p>
                     <p className='location '>{props.location} | <span className='exp-type'>{props.experienceType}</span></p>
                 </div>
             </div>

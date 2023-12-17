@@ -17,7 +17,7 @@ const ProjectCard = ({props}) => {
       <div onClick={() => {navigate(`/projects/${props._id}`)}} className='card-body '>
         <div className="project-details ">
             <Tag tag={props.category}></Tag>
-            <p className='duration'>{new Date(props.startDate).toLocaleDateString()} - {new Date(props.endDate).toLocaleDateString()}</p>
+            <p className='duration'>{new Date(props.startDate).toDateString()} - {new Date(props.endDate).toDateString()}</p>
             <p className='description'>{props.shortDescription}</p>
         </div>
         <div className='extras'>
