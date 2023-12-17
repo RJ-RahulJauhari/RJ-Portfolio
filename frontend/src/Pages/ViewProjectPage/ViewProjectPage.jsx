@@ -36,13 +36,7 @@ const ViewProjectPage = () => {
   return (
     <div className='view-project-page full-width'>
       <div className='top-details gap3'>
-        {
-          data.imagesUrl && data.imagesUrl.length > 0 
-          ? <div className='flex2'>
-              <ImageCarousel width={'520px'} images={data.imagesUrl} stopOnHover={true} swipeble={true} infiniteLoop={true} autoplay={true} interval={4000}></ImageCarousel>
-            </div>
-          : ""
-        }
+        
         <div className='project-info flex3'>
           <div className='flex-row center full-width'>
             <div className='logo flex1'>
@@ -89,15 +83,24 @@ const ViewProjectPage = () => {
           </div>
         </div>
       </div>
-      <div className='bottom-details'>
-        <div className='video-player'>
-        {
-          data.videoUrl
-          ? <ReactPlayer url={data.videoUrl} controls={true} width={'720'}></ReactPlayer>
-          : ''
-        }
+      <div className='bottom-details gap2'>
+        <div className='media flex1'>
+          <div className='video-player'>
+          {
+            data.videoUrl
+            ? <ReactPlayer url={data.videoUrl} controls={true} width={'480px'}></ReactPlayer>
+            : ''
+          }
+          </div>
+          {
+            data.imagesUrl && data.imagesUrl.length > 0 
+            ? <div>
+                <ImageCarousel width={'480px'} images={data.imagesUrl} stopOnHover={true} swipeble={true} infiniteLoop={true} autoplay={true} interval={4000}></ImageCarousel>
+              </div>
+            : ""
+          }
         </div>
-        <div>
+        <div className='project-data flex3'>
           <p className='sub-heading'>Description</p>
           <p className='description'>{data.description}</p>
         </div>
