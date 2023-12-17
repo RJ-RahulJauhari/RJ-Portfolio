@@ -15,7 +15,7 @@ function App() {
     <HeroContextProvider>
       <Navbar></Navbar>
       <Routes>
-        <Route exact path='/' element={<HomePage></HomePage>}></Route>
+        <Route path='/' element={<HomePage></HomePage>}></Route>
         <Route path='/about' element={<AboutPage></AboutPage>}></Route>
         <Route path='/skills' element={<SkillsPage></SkillsPage>}></Route>
         <Route path='/experiences' element={<ExperiencePage></ExperiencePage>}></Route>
