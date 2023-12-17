@@ -1,12 +1,47 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './AboutPage.scss'
 import { HeroContext } from '../../Context/HeroContext'
 import EducationCard from '../../Components/EducationCard/EducationCard';
 import {useLocation} from 'react-router-dom'
+import axios from "axios";
+import { BASE_URL } from "../../url";
 
 const AboutPage = () => {
-  const {hero,education} = useContext(HeroContext);
+  //const {hero,education} = useContext(HeroContext);
+  const [hero,setHero] = useState(null);
+  const [education,setEducation] = useState(null); 
   const page = useLocation().pathname.substring(1);
+
+  useEffect(() => {
+    getHero();
+    getEducation();
+  },[])
+
+  const getHero = async () =>{
+    try {
+        await axios.get(`${BASE_URL}/users/hero`)
+        .then((res) =>{
+            setHero(res.data);
+        })
+    } catch (error) {
+        setHero(null);
+        console.log(error.response.data);
+    }
+  }
+
+  const getEducation = async () => {
+    try {
+        await axios.get(`${BASE_URL}/education/getAll`)
+        .then((res) => {
+            const data = res.data;
+            if(data){
+                setEducation(data)
+            }
+        })
+    } catch (error) {
+        console.log(error.response.data)
+    }
+}
 
   if(hero && education){
     return (
