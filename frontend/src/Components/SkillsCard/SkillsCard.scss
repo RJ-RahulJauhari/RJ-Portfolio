@@ -1,7 +1,10 @@
 .skills-card {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    min-width: 300px;
     min-height: 250px;
     align-items: center;
     border-color: var(--primary-color);

@@ -1,5 +1,5 @@
 .experience-card {
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,6 +7,7 @@
     padding: 30px;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
     border: 2px solid var(--primary-color);
     .experience-left {
         display: flex;
@@ -57,6 +58,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            flex-wrap: wrap;
             .description {
                 height: 120px;
                 overflow: hidden;
