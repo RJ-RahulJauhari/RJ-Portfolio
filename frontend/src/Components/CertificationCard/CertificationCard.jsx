@@ -18,7 +18,11 @@ const CertificationCard = ({props}) => {
           <div className='certification-details flex1'>
             <p className='certificate-title'>{props.title}</p>
             <p className='institute-name'>{props.institution}</p>
-            <p className='credID'>Credential: {props.credId}</p>
+            {
+              props.credId
+              ?<p className='credID'>Credential: {props.credId}</p>
+              :''
+            }
             <a target='_blank' className='remove-link-decor hoverable' href={props.credUrl}><p className='credURL'>Credential Link</p></a>
             <p className='duration'>{new Date(props.startDate).toDateString()} - {new Date(props.endDate).toDateString()}</p>
           </div>
