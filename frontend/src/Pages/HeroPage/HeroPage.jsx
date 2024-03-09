@@ -35,7 +35,7 @@ const HeroPage = () => {
             </div>
       </div>
       <div className='hero-right center-content full-height '>
-        <img className='hero-image page-height full-cover-img scale-up' src={hero? hero.photoUrl:"Rahul's Image"} alt="Rahul's Image" />
+        <img className='hero-image full-cover-img scale-up' src={hero? hero.photoUrl:"Rahul's Image"} alt="Rahul's Image" />
       </div>
     </div>
   )
