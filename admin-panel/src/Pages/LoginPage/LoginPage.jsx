@@ -29,7 +29,7 @@ const LoginPage = () => {
           console.log(data)
           setError(false)
           setMessage(`Successful Login by Admin`)
-          navigate('/');
+          navigate('/hero');
         } 
         }).then(() => {
           getUser();

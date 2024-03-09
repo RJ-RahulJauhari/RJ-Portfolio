@@ -10,7 +10,7 @@ const AboutPage = () => {
 
   if(hero && education){
     return (
-      <div className='about-page full-width'>
+      <div id='about' className='about-page full-width'>
         
         {
         page === 'about'

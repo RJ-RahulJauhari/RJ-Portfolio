@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import './HeroPage.scss'
 import { HeroContext } from '../../Context/HeroContext';
 import '../../animated-flicker-circle.scss'
@@ -22,7 +23,9 @@ const HeroPage = () => {
                 <p className='right'><span className='hero-line4'>Software Developer</span></p>  */}
             </div>
             <div className='hero-buttons row-center gap2 full-width wrap'>
+              <AnchorLink href='#about'>
                 <button className='primary-button'>Explore</button>
+              </AnchorLink>
                 {
                   hero
                   ? <a className='remove-link-decor' target='_blank' href={hero.resume}><button className='primary-button'>Get Resume</button></a>
