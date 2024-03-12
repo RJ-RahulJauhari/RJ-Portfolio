@@ -40,6 +40,8 @@
         align-items: center;
         overflow: hidden;
         min-width: 300px;
+        max-width: 100%;
+        width: auto;
         flex: 1.25;
         .hero-image {
             margin-top: 30px;

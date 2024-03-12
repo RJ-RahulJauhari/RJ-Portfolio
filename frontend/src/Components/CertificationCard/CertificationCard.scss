@@ -4,7 +4,9 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 450px;
+    max-width: 420px;
+    min-width: 300px;
+    width: auto;
     border: solid var(--primary-color) 2px;
     border-radius: 30px;
     .certificate-image {
@@ -112,11 +114,12 @@
                 font-weight: 500;
             }
             .skills-container {
-                width: 100%;
+                width: 95%;
                 display: flex;
                 padding-inline: 10px;
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: center;
                 gap: 5px;
             }
         }

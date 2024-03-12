@@ -4,10 +4,16 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    .portfolio-title {
+        margin-left: 30px;
+    }
     .top-navbar {
-        width: 95%;
+        width: 100%;
     }
     .line {
         height: 3px;
+    }
+    .social-icons {
+        margin-right: 30px;
     }
 }

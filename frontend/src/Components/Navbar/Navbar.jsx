@@ -10,10 +10,10 @@ const Navbar = () => {
   const [pageTitle,setPageTitle] = useState('Portfolio');
 
   return (
-    <div className='navbar full-width'>
+    <div className='navbar'>
       <div className='top-navbar row-space-between'>
         <div className='logo flex4'>
-          <p className='heading hoverable'>{pageTitle}</p>
+          <p className='heading portfolio-title hoverable'>{pageTitle}</p>
         </div>
         <div className='social-icons flex1 row-center gap2'>
           {
